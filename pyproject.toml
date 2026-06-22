@@ -1,0 +1,15 @@
+[project]
+name = "pwc-monthly-rss"
+version = "0.1.0"
+description = "Generate a current-month Atom feed for selected Papers with Code topics"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.13",
+    "feedgen>=1.0",
+    "playwright>=1.50",
+    "pyyaml>=6.0",
+    "python-dateutil>=2.9",
+]
+
+[tool.uv]
+package = false

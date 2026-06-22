@@ -1,0 +1,69 @@
+feed:
+  title: "PWC — This Month"
+  description: >
+    Current-month papers covering Agents, Language Modeling,
+    Reasoning and Reinforcement Learning.
+  output: "docs/feed.xml"
+  homepage: "https://paperswithcode.co/"
+  timezone: "Asia/Tokyo"
+  max_items: 500
+
+browser:
+  headless: true
+  timeout_ms: 90000
+  render_wait_ms: 5000
+  scroll_rounds: 5
+
+tasks:
+  - name: "Agents"
+    url: "https://paperswithcode.co/tasks/agents"
+    mode: "broad"
+
+  - name: "Reasoning"
+    url: "https://paperswithcode.co/tasks/reasoning"
+    mode: "broad"
+
+  - name: "Language Modeling"
+    url: "https://paperswithcode.co/tasks/language-modeling"
+    mode: "filtered"
+    include:
+      - "large language model"
+      - "language model"
+      - "llm"
+      - "foundation model"
+      - "agent"
+      - "agentic"
+      - "reasoning"
+      - "tool use"
+      - "function calling"
+      - "memory"
+      - "alignment"
+      - "post-training"
+      - "instruction tuning"
+      - "long context"
+      - "inference scaling"
+      - "test-time compute"
+      - "mixture of experts"
+      - "moe"
+
+  - name: "Reinforcement Learning"
+    url: "https://paperswithcode.co/tasks/reinforcement-learning"
+    mode: "filtered"
+    include:
+      - "large language model"
+      - "language model"
+      - "llm"
+      - "agent"
+      - "agentic"
+      - "multi-agent"
+      - "rlhf"
+      - "rlaif"
+      - "grpo"
+      - "ppo"
+      - "reward model"
+      - "process reward"
+      - "verifier"
+      - "reasoning"
+      - "tool use"
+      - "post-training"
+      - "preference optimization"
